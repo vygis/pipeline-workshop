@@ -5,6 +5,6 @@ jobs:
     docker:
       - image: circleci/node:10
     steps:
-      - checkout
-      - npm install
-      - npm run build
+      - run: checkout
+      - run: npm install
+      - run: npm run build
