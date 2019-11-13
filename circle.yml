@@ -11,4 +11,4 @@ jobs:
       - run: npm run build
       - run: npm run test:ci
       - store_artifacts:
-          path: dist
+          path: dist/workshop

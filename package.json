@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "test:start": "serve -p 4200 dist/workshop",
     "test:run": "cypress run",
-    "test:ci": "npm run build && concurrently -r -k -s first \"npm run test:start\" \"npm run test:run\""
+    "test:ci": "concurrently -r -k -s first \"npm run test:start\" \"npm run test:run\""
   },
   "private": true,
   "dependencies": {
